@@ -1,6 +1,6 @@
 # OTP Bottom Sheet Experiment
 
-An experimental project exploring how OTP (On-Trip) features could be seamlessly integrated into OneBusAway using bottom sheets over map interfaces.
+An experimental project exploring how [OTPKit](https://github.com/manu-r12/otpkit) features could be seamlessly integrated into OneBusAway using bottom sheets over map interfaces.
 
 ## Purpose
 
