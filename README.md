@@ -1,46 +1,44 @@
-# OTP Bottom Sheet
+# OTP Bottom Sheet Experiment
 
-A simple, customizable bottom sheet library for iOS that wraps FloatingPanel to provide seamless SwiftUI content integration in UIKit apps.
+An experimental project exploring how OTP (On-Trip) features could be seamlessly integrated into OneBusAway using bottom sheets over map interfaces.
 
-## Features
+## Purpose
 
-- 🎯 **Drop-in integration** - Just present any SwiftUI view
-- 📱 **Apple Maps-like behavior** - Smooth transitions and positioning
+This experiment demonstrates:
+- **Bottom sheet integration** for OTP workflows in transit apps
+- **Map + content coordination** similar to Apple Maps
+- **SwiftUI content** presentation in existing UIKit map views
+- **Smooth position transitions** for optimal map visibility during trip planning
+
+## OTP Integration Concept
+
+The demo shows how OneBusAway could present OTP features:
+- **Trip planning interface** in bottom sheets over the main map
+- **Stop/route details** with adjustable visibility
+- **Real-time updates** without losing map context
+- **Seamless transitions** between planning and navigation modes
+
+## Key Features
+
+- 🗺️ **Map-first design** - Keep transit map visible while planning
+- 📱 **Apple Maps-like behavior** - Familiar interaction patterns
+- 🚌 **Transit-focused** - Built for stop/route/trip workflows
 - ⚙️ **Configurable positions** - Tip, half, and full detents
-- 🔄 **Dynamic content updates** - Change content without dismissing
-- 🎨 **SwiftUI + UIKit** - Best of both worlds
+- 🔄 **Dynamic content** - Update without dismissing sheet
 
-## Quick Start
+## Demo Functionality
 
-1. Add FloatingPanel dependency to your project
-2. Copy the `CustomBottomSheet.swift` file
-3. Present any SwiftUI view:
+The example demonstrates:
+1. **Full screen map** with floating controls
+2. **Location list** in bottom sheet (simulating stops/routes)
+3. **Tap list item** → Sheet moves to tip position for better map visibility
+4. **Smooth transitions** ideal for OTP user flows
 
-```swift
-let bottomSheet = CustomBottomSheet()
-let myView = MySwiftUIView()
-bottomSheet.present(content: myView, on: viewController)
-```
+## Technical Implementation
 
-## Example
-
-This project demonstrates a map app with location list where tapping locations shows details in a bottom sheet that automatically adjusts position for optimal map visibility.
+Built using FloatingPanel wrapper with SwiftUI content support for easy OTP feature integration into existing OneBusAway UIKit codebase.
 
 ## Requirements
 
 - iOS 13.0+
-- Xcode 12.0+
-- Swift 5.0+
-
-## Installation
-
-1. Add FloatingPanel to your project via SPM:
-   ```
-   https://github.com/scenee/FloatingPanel
-   ```
-
-2. Add the CustomBottomSheet files to your project
-
-## License
-
-MIT License - see LICENSE file for details.
+- FloatingPanel dependency
